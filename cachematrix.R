@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Jaames Bennett
+##R Programing
+##Objective:  Cache the inverse of a Matrix 
 
-## Write a short comment describing this function
+## makeCacheMatrix is a function that generates a special "Matrix" object that 
+## can cache it's inverse
 
 makeCacheMatrix <- function(x = matrix()) {
         
@@ -22,8 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## Function cacheMatrix uses the special matrix returned by the makeCacheMatrix function. 
+## If the inverse has already been calculated (and the matrix has not changed), then the cachesolve should retrieve the inverse from the cache.
 cacheSolve <- function(x, ...) {
         m <- x$getinverse()
                 if (!is.null(m)){
